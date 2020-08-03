@@ -1,0 +1,19 @@
+﻿  Problem120.cpp
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem120\problem120\problem120.cpp(37): warning C4244: '-=': '_Ty' から 'int' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=__int64
+          ]
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem120\problem120\problem120.cpp(99): warning C4244: '=': '_Ty' から 'int' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=__int64
+          ]
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem120\problem120\problem120.cpp(100): warning C4244: '=': '_Ty' から 'int' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=__int64
+          ]
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem120\problem120\problem120.cpp(101): warning C4244: '=': '__int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem120\problem120\problem120.cpp(515): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  Problem120.vcxproj -> C:\Users\shunji muto\Desktop\AtCoderPractice2020M\Problem120\Debug\Problem120.exe

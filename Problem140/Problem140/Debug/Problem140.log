@@ -1,0 +1,6 @@
+﻿  Problem140.cpp
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem140\problem140\problem140.cpp(117): warning C4244: '初期化中': 'double' から '__int64' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem140\problem140\problem140.cpp(119): warning C4244: '初期化中': '__int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem140\problem140\problem140.cpp(154): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem140\problem140\problem140.cpp(330): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  Problem140.vcxproj -> C:\Users\shunji muto\Desktop\AtCoderPractice2020M\Problem140\Debug\Problem140.exe

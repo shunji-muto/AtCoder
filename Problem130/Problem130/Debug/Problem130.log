@@ -1,0 +1,4 @@
+﻿  Problem130.cpp
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem130\problem130\problem130.cpp(537): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem130\problem130\problem130.cpp(539): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+  Problem130.vcxproj -> C:\Users\shunji muto\Desktop\AtCoderPractice2020M\Problem130\Debug\Problem130.exe

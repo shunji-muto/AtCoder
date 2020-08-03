@@ -1,0 +1,9 @@
+﻿  Problem150.cpp
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem150\problem150\problem150.cpp(63): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem150\problem150\problem150.cpp(64): warning C4244: '初期化中': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem150\problem150\problem150.cpp(141): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem150\problem150\problem150.cpp(144): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem150\problem150\problem150.cpp(216): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem150\problem150\problem150.cpp(376): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem150\problem150\problem150.cpp(387): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+  Problem150.vcxproj -> C:\Users\shunji muto\Desktop\AtCoderPractice2020M\Problem150\Debug\Problem150.exe

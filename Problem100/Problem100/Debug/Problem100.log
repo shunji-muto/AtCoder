@@ -1,0 +1,6 @@
+﻿  Problem100.cpp
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem100\problem100\problem100.cpp(20): warning C4244: '初期化中': 'double' から '__int64' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem100\problem100\problem100.cpp(387): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem100\problem100\problem100.cpp(447): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem100\problem100\problem100.cpp(457): warning C4552: '-': 式の結果が使用されていません
+  Problem100.vcxproj -> C:\Users\shunji muto\Desktop\AtCoderPractice2020M\Problem100\Debug\Problem100.exe

@@ -1,0 +1,8 @@
+﻿  Problem110.cpp
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem110\problem110\problem110.cpp(19): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem110\problem110\problem110.cpp(25): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem110\problem110\problem110.cpp(46): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem110\problem110\problem110.cpp(112): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem110\problem110\problem110.cpp(507): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\shunji muto\desktop\atcoderpractice2020m\problem110\problem110\problem110.cpp(513): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  Problem110.vcxproj -> C:\Users\shunji muto\Desktop\AtCoderPractice2020M\Problem110\Debug\Problem110.exe
