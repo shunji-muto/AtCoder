@@ -7,6 +7,29 @@
 #include<map>
 using namespace std;
 
+int main()
+{
+	int N;
+	cin >> N;
+	
+	vector<char> c(N);
+	int r_cnt = 0;
+	for (int i = 0; i < N; ++i)
+	{
+		cin >> c[i];
+		if (c[i] == 'R') ++r_cnt;
+	}
+
+	int r=0;
+	for (int i = 0; i < r_cnt; ++i)
+	{
+		if (c[i] == 'R') ++r;
+	}
+
+	cout << r_cnt - r << endl;
+
+}
+
 void C174()
 {
 	int K;
@@ -59,8 +82,22 @@ void D173()
 	cin >> N;
 	vector<int> A(N);
 	for (int i = 0; i < N; ++i) cin >> A[i];
+	sort(A.rbegin(), A.rend());
 
-
+	long long sum=0;
+	int t = N - 1;
+	for (int i = 0; i < A.size(); ++i)
+	{
+		int lim = 2;
+		if (i == 0) lim = 1;
+		for (int j = 0; j < lim; ++j)
+			if (t > 0)
+			{
+				sum += A[i];
+				--t;
+			}
+	}
+	cout << sum << endl;
 }
 
 void C173()
@@ -188,7 +225,7 @@ void A172()
 	cout << a + a * a + a * a*a << endl;
 }
 
-int main()
+void D171()
 {
 	long long N;
 	cin >> N;

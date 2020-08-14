@@ -4,6 +4,57 @@
 
 using namespace std;
 
+int main()
+{
+	long long A;
+	float B;
+	cin >> A >> B;
+
+	int intB = (int)B;
+
+	long long ans = A * C /100;
+	cout << ans << endl;
+}
+
+void B169()
+{
+	int N;
+	cin >> N;
+	vector<long long> A(N);
+	bool isZero = false;
+	for (int i = 0; i < N; ++i)
+	{
+		cin >> A[i];
+		if (A[i] == 0) isZero = true;
+	}
+
+	if (isZero)
+	{
+		cout << "0" << endl;
+		return;
+	}
+
+	long long ans=1;
+	for (int i = 0; i < N; ++i)
+	{
+		if (A[i] <= 1000000000000000000 / ans) ans *= A[i];
+		else
+		{
+			cout << "-1" << endl;
+			return;
+		}
+	}
+	cout << ans << endl;
+}
+
+void A169()
+{
+	int A, B;
+	cin >> A >> B;
+
+	cout << A * B << endl;
+}
+
 void C_160()
 {
   long long K, N;
@@ -54,9 +105,4 @@ void A_160()
   {
     cout << "No" << endl;
   }
-}
-
-int main()
-{
-  A_160();
 }

@@ -1,3 +1,17 @@
 ﻿  AtCoder170.cpp
-c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(155): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(83): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(88): warning C4244: '初期化中': '__int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(89): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(214): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(232): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(239): warning C4244: '引数': '_Ty' から 'const unsigned int' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=__int64
+          ]
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(250): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(256): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(257): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(258): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
+c:\users\postureviewerformr\desktop\atcoder\problem170\atcoder170\atcoder170\atcoder170.cpp(259): warning C4244: '引数': '__int64' から 'const unsigned int' への変換です。データが失われる可能性があります。
   AtCoder170.vcxproj -> C:\Users\PostureViewerForMR\Desktop\AtCoder\Problem170\AtCoder170\Debug\AtCoder170.exe
