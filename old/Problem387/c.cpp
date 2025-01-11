@@ -1,30 +1,46 @@
-// #include <iostream>
-// #include <math.h>
-// #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 
+using namespace std;
 
-// using namespace std;
+long long int_pow(long long x, long long y){
+    long long result = 1;
+    for(int i=0;i<y;i++) result *= x;
+    return result;
+}
 
-// long long Calc(long long n){
-//     vector<int> num;
-//     for(;n;n/10){
-//         num.push_back(n%10);
-//     }
-//     reverse(num.begin(), num.end());
+long long Calc(long long r){
+    vector<int> digit;
+    while (r) {//つまりポイント
+        digit.push_back(r % 10);
+        r /= 10;
+    }
+    reverse(digit.begin(), digit.end());
 
-//     int len = num.size();
-//     long long res = 0;
-//     bool flag = 0;
+    int len = digit.size();
+    long long result = 0;
+    for(int i=1;i<=len;i++){
+        if(i==len){
+            result++;
+            break;
+        }
+        result += int_pow(digit[0], len-1-i )* min(digit[0], digit[i]);
+        if(digit[0] <= digit[i]) break;
+    }
 
-//     for(int i = 1; i < len; i++){
-//         res += min(num[0], num[i])
-//     }
-// }
+    for(int i=0;i<len;i++){
+        int max = (i ? 9 : digit[0]-1);
+        for(int j=1;j<=max;j++){
+            result += int_pow(j, len-1-i);
+        }
+    }
 
-// int main()
-// {
-//     long long L, R;
-// 	cin >> L >> R;
+    return result;
+}
 
-//     cout << result << endl;
-// }
+int main()
+{
+    long long L, R;
+	cin >> L >> R;
+
+    cout << Calc(R)-Calc(L-1) << endl;
+}
