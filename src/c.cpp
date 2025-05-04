@@ -5,52 +5,52 @@
 using ll = long long;
 using namespace std;
 
+int cnt = 0;
+
+
+void dfs(int v, vector<vector<int>> &G, vector<bool> &visited) {
+    ++cnt;
+    visited[v] = true;
+    for(auto nv : G[v]) {
+        if(visited[nv]) continue;
+        dfs(nv, G, visited);
+    }
+}
+
 int main()
 {
     int N, M;
-    cin >> N >> M;
-    
-    // 各料理に使用される食材を管理
-    vector<vector<int>> dishes(M);
-    // 各食材がどの料理で使用されているかを管理
-    vector<vector<int>> ingredient_to_dishes(N);
-    // 各料理に含まれる苦手な食材の数
-    vector<int> bad_ingredients_count(M);
-    
-    // 各料理の食材情報を入力
-    rep(i, M) {
-        int K;
-        cin >> K;
-        bad_ingredients_count[i] = K;  // 最初は全ての食材が苦手
-        rep(j, K) {
-            int A;
-            cin >> A;
-            A--;  // 0-indexedに変換
-            dishes[i].push_back(A);
-            ingredient_to_dishes[A].push_back(i);  // 食材Aを使用する料理iを記録
+    cin >> N >> M ;
+
+    if(N != M) {
+        cout << "No" << endl;
+        return 0;
+    }
+
+    vector<int> A(N, 0);
+    vector<vector<int>> G(N);
+    rep(i,M){
+        int a, b; cin >> a >> b;
+        a--; b--;
+        G[a].emplace_back(b);
+        G[b].emplace_back(a);
+
+        A[a]++;
+        A[b]++;
+        if(A[a] > 2 || A[b] > 2) {
+            cout << "No" << endl;
+            return 0;
         }
     }
-    
-    // 克服する食材の順序を入力
-    vector<int> B(N);
-    rep(i, N) {
-        cin >> B[i];
-        B[i]--;  // 0-indexedに変換
+
+    vector<bool> visited(N, false);
+    dfs(cnt, G, visited);
+
+    if(cnt != N) {
+        cout << "No" << endl;
+        return 0;
     }
-    
-    // 各日の結果を計算
-    int current_edible = 0;  // 現在食べられる料理の数
-    rep(day, N) {
-        // その日に克服する食材が使われている全ての料理について
-        int target = B[day];
-        for (int dish : ingredient_to_dishes[target]) {
-            bad_ingredients_count[dish]--;
-            if (bad_ingredients_count[dish] == 0) {
-                current_edible++;  // 新しく食べられるようになった料理
-            }
-        }
-        cout << current_edible << endl;
-    }
-    
+
+    cout << "Yes" << endl;
     return 0;
 }

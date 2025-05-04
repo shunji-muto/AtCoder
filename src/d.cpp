@@ -11,19 +11,17 @@ using namespace std;
 
 
 int main() {
-	int N, M;
-	cin >> N >> M;
+	int N, D;
+	cin >> N >> D;
 
-	map<int, int> cnt;
-	ll ans = M * ll(M-1)/2;
-	rep(i, M) {
-		int a, b;
-		cin >> a >> b;
-		int x = (a+b)%N;
-		ans -= cnt[x];
-		cnt[x]++;
+	set<int> set_a;
+	rep(i, N) {
+		int a;
+		cin >> a;
+		set_a.insert(a);
 	}
-	cout << ans << endl;
+
 	
+
 	return 0;
 }
